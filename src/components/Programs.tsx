@@ -1,4 +1,3 @@
-import React from "react";
 import { FaCrown } from "react-icons/fa";
 import { AiFillCaretRight } from "react-icons/ai";
 
@@ -7,9 +6,8 @@ import { programs } from "../assets/data";
 import Card from "./ui/Card";
 import { Link } from "react-router-dom";
 
-type Props = {};
 
-const Programs = (props: Props) => {
+const Programs = () => {
   return (
     <section className="programs">
       <div className="container programs__container">

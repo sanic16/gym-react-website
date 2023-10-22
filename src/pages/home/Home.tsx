@@ -6,9 +6,8 @@ import Testimonials from '../../components/Testimonials'
 import Values from '../../components/Values'
 import './home.css'
 
-type Props = {}
 
-const Home = (props: Props) => {
+const Home = () => {
   return (
     <>
       <MainHeader />

@@ -3,9 +3,9 @@ import { FaQuestion } from 'react-icons/fa'
 import { faqs } from "../assets/data"
 import FAQ from "./FAQ"
 
-type Props = {}
 
-const FAQs = (props: Props) => {
+
+const FAQs = () => {
   return (
     <section className="faqs">
         <div className="container faqs__container">

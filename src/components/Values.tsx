@@ -4,9 +4,8 @@ import { GiCutDiamond } from "react-icons/gi";
 import { values } from "../assets/data";
 import Card from "./ui/Card";
 
-type Props = {};
-
-const Values = (props: Props) => {
+  
+const Values = () => {
   return (
     <section className="values">
       <div className="container values__container">

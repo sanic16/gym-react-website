@@ -8,11 +8,10 @@ import {
 import { testimonials } from "../assets/data";
 import SectionHeader from "./SectionHeader";
 
-type Props = {};
 
-const Testimonials = (props: Props) => {
+const Testimonials = () => {
   const [index, setIndex] = useState(0);
-  const { id, name, avatar, job, quote } = testimonials[index];
+  const { name, avatar, job, quote } = testimonials[index];
 
     const prevTestimonialHanlder = () => {
         setIndex((index - 1 + testimonials.length) % testimonials.length)

@@ -3,7 +3,7 @@ import { Link, NavLink } from 'react-router-dom'
 
 import logo from '../assets/images/logo.png'
 
-import { links, trainers } from '../assets/data'
+import { links } from '../assets/data'
 
 import { FaBars } from 'react-icons/fa'
 import { MdOutlineClose } from 'react-icons/md'
@@ -11,9 +11,8 @@ import { MdOutlineClose } from 'react-icons/md'
 
 import './navbar.css'
 
-type Props = {}
 
-const Navbar = (props: Props) => {
+const Navbar = () => {
     const [isNavShowing, setIsNavShowing] = useState(false)
 
   return (

@@ -1,10 +1,7 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import image from '../assets/images/main_header.png'
 
-type Props = {};
-
-const MainHeader = (props: Props) => {
+const MainHeader = () => {
   return (
     <header className="main__header">
       <div className="container main__header-container">

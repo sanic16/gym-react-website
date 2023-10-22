@@ -1,8 +1,7 @@
 import './trainers.css'
 
-type Props = {}
 
-const Trainers = (props: Props) => {
+const Trainers = () => {
   return (
     <div>Trainers</div>
   )

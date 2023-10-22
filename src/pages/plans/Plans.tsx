@@ -1,8 +1,7 @@
 import './plans.css'
 
-type Props = {}
 
-const Plans = (props: Props) => {
+const Plans = () => {
   return (
     <div>Plans</div>
   )
