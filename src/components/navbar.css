@@ -2,6 +2,7 @@ nav{
     height: 5rem;
     width: 100vw;
     background-color: var(--color-primary);
+    /* background-color: transparent; */
     display: grid;
     place-items: center;
     position: fixed;
@@ -25,6 +26,7 @@ nav{
 
 .logo{
     width: 7rem;
+    display: block;
 }
 
 .nav__links{

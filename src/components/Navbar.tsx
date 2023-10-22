@@ -19,14 +19,25 @@ const Navbar = (props: Props) => {
   return (
     <nav>
         <div className="container nav__container">
-            <Link to='/' className='logo'>
+            <Link 
+                to='/' 
+                className='logo' 
+                onClick={()=> setIsNavShowing(false)}
+            >
                 <img src={logo} alt="Nav Logo" />
             </Link>
             <ul className={`nav__links ${isNavShowing ? 'show__nav' : 'hide__nav'}`}>
                 {
                     links.map(({name, path}, index) => (
                         <li key={path}>
-                            <NavLink to={path} key={index} className={({isActive})=> (isActive ? 'active-nav' : '')}>{name}</NavLink>
+                            <NavLink 
+                                to={path} 
+                                key={index} 
+                                className={({isActive})=> (isActive ? 'active-nav' : '')}
+                                onClick={()=> setIsNavShowing(prevState => !prevState)}
+                            >
+                                {name}
+                            </NavLink>
                         </li>
                     ))
                 }
