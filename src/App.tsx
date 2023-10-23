@@ -13,6 +13,7 @@ import NotFound from './pages/not_found/NotFound'
 
 import './App.css'
 import Navbar from './components/Navbar'
+import Footer from './components/Footer'
 
 function App() {
 
@@ -28,6 +29,7 @@ function App() {
         <Route path='/trainers' element={<Trainers />} />
         <Route path='*' element={<NotFound />} />
       </Routes>
+      <Footer />
     </BrowserRouter>
   )
 }
