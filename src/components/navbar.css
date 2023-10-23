@@ -33,17 +33,19 @@ nav{
     display: flex;
     gap: 3.5rem;
     align-items: center;
+    position: static;
 }
 
 .nav__links a{
     transition: var(--transition);
+    
 }
 
 .active-nav{
     position: relative;
 }
 
-.active-nav::after{
+.active-nav::after {
     content: '';
     display: block;
     width: 1.2rem;
@@ -51,10 +53,15 @@ nav{
     background-color: var(--color-primary);
     position: absolute;
     left: calc(50% - 0.6rem);
+    top: 2.5rem;
     transform: rotate(45deg);
-    margin-top: 0.9rem;
-
+    
+    
+    /* Additional properties for Firefox */
+    transform-origin: center;
+    -webkit-transform: rotate(45deg); /* For older versions of Firefox */
 }
+
 
 .nav__links a:hover{
     color: var(--color-secondary);
